@@ -1,0 +1,256 @@
+.grade-roca {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.grade-peoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1.5rem;
+}
+
+.card-foto {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card-roca {
+  border: 4px solid var(--celeiro);
+}
+
+.card {
+  background: var(--palha);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.barra {
+  background-color: var(--papel);
+  height: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--papel);
+  color: var(--tinta);
+  font-family: var(--fonte-texto);
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  font-family: var(--fonte-titulo);
+  color: var(--palha);
+}
+
+.votacao,
+.resultado {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.subtitulo {
+  font-family: var(--fonte-texto);
+  color: var(--palha);
+  font-size: 0.95rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sucesso {
+  font-family: var(--fonte-texto);
+  background-color: var(--pasto);
+  color: white;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.destaque {
+  font-family: var(--fonte-texto);
+  font-weight: bold;
+}
+
+.linkplacar {
+  font-family: var(--fonte-texto);
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.card-info {
+  padding: 1rem;
+}
+
+.card-info h3 {
+  font-family: var(--fonte-titulo);
+  margin: 0 0 0.5rem 0;
+  font-size: 1.6rem;
+  color: var(--tinta);
+}
+
+.selo-roca {
+  font-family: var(--fonte-texto);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--celeiro);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+button {
+  font-family: var(--fonte-texto);
+  background-color: var(--celeiro);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+.votos {
+  font-family: var(--fonte-texto);
+  font-size: 1.2rem;
+  color: var(--palha);
+  margin-bottom: 2rem;
+}
+
+.votos .num {
+  font-family: var(--fonte-titulo);
+  font-size: 3.5rem;
+  color: var(--palha);
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.placar {
+  margin-bottom: 2rem;
+}
+
+.linha {
+  background-color: var(--palha);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.lider {
+  border: 4px solid var(--celeiro);
+}
+
+.boxpeao {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.fotovoto {
+  width: 120px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.infovotos {
+  flex-grow: 1;
+}
+
+.nomelinha {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.nomepeao {
+  font-family: var(--fonte-titulo);
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: var(--tinta);
+}
+
+.seloelimina {
+  font-family: var(--fonte-texto);
+  background-color: var(--celeiro);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.valores {
+  font-family: var(--fonte-texto);
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: var(--tinta);
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.preenchido {
+  height: 100%;
+}
+
+.v1 {
+  background-color: var(--celeiro);
+}
+
+.v2 {
+  background-color: var(--madeira);
+}
+
+.v3 {
+  background-color: var(--madeira);
+}
+
+.btnzerar {
+  font-family: var(--fonte-texto);
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  width: auto;
+}
+
+.vazio {
+  font-family: var(--fonte-texto);
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--palha);
+  border-radius: 8px;
+  color: var(--tinta);
+}
+
+.btnvotar {
+  font-family: var(--fonte-texto);
+  background-color: var(--celeiro);
+  color: white;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
